@@ -5,51 +5,64 @@ import {
 from 'events';
 import assign from 'object-assign';
 import $ from 'jquery';
-import request from 'request';
+import http from '../core/HttpClient';
 
 let CHANGE_EVENT = 'change';
 
-let repos = [];
 
-let RepositoryStore = assign({}, EventEmitter.prototype, {
-
+class RepositoryStore extends EventEmitter {
+    
+    
+    constructor() {
+        super();
+        this.repos = [];
+    }
+    
     /**
      * Get the entire collection of TODOs.
      * @return {object}
      */
-    getAll: () => {
-        return repos;
-    },
+     
+    setAll (repos) {
+        this.repos = repos;
+    } 
+     
+    getAll () {
+        return this.repos;
+    }
 
-    emitChange: () => {
+    emitChange () {
         this.emit(CHANGE_EVENT);
-    },
+    }
 
     /**
      * @param {function} callback
      */
-    addChangeListener: (callback) => {
+    addChangeListener (callback) {
         this.on(CHANGE_EVENT, callback);
-    },
+    }
 
     /**
      * @param {function} callback
      */
-    removeChangeListener: (callback) => {
+    removeChangeListener (callback) {
         this.removeListener(CHANGE_EVENT, callback);
     }
-});
+};
 
+let store = new RepositoryStore();
+console.log("Created store");
 /*
-request('https://api.github.com/users/dbenson24/repos', (error, response, body) => {
+request('/api/repos', (error, response, body) => {
     if (!error && response.statusCode == 200) {
         console.log (body);
         repos = body;
-        RepositoryStore.emitChange();
+        store.emitChange();
+    } else {
+        console.log("response", response);
     }
 });
 */
-
 /*
 $.getJSON("https://api.github.com/users/dbenson24/repos", "", (data) => {
     repos = data;
@@ -57,4 +70,11 @@ $.getJSON("https://api.github.com/users/dbenson24/repos", "", (data) => {
 });
 */
 
-export default RepositoryStore;
+export default store;
+async () => {
+    console.log("Updating store");
+    const repos = await http.get('/api/repos');
+    console.log("Recieved repos");
+    store.setAll(repos);
+    store.emitChange();
+}();

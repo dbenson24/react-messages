@@ -26,15 +26,7 @@ const router = new Router(on => {
   on('/register', async () => <RegisterPage />);
   
   on('/feed', async () => {
-    const data = await http.get('/api/repos/');
-    console.log(data);
-    return <Feed message={data}/>;
-  }
-  );
-  
-  on('/feedapi', async () => {
-    const data = await http.get('/api/repos/');
-    return data;
+    return <Feed />;
   }
   );
 

@@ -34,6 +34,12 @@
   --screen-md-min:         992px;  /* Medium screen / desktop */
   --screen-lg-min:         1200px; /* Large screen / wide desktop */
 
+  @custom-media --screen-xs all and (min-width: 480px);
+  @custom-media --screen-sm all and (min-width: 768px);
+  @custom-media --screen-md all and (min-width: 1024px);
+  @custom-media --screen-lg all and (min-width: 1400px);
+
+
   /*
    * Animations
    * ======================================================================== */

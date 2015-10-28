@@ -12,6 +12,7 @@ class Feed extends Component {
   constructor() {
   super();
   this.state = {repositories: []};
+  this._update = this._update.bind(this);
  }
 
   render() {
@@ -36,6 +37,7 @@ class Feed extends Component {
   }
   
   _update() {
+    console.log("Recieved change event");
     this.setState({repositories: RepositoryStore.getAll()});
   }
 
@@ -45,7 +47,11 @@ class Repository extends Component {
   
   render() {
     return (
-      <p>{this.props.repo.name}</p>
+      <div className="Repository-container">
+        <div className="Repository">
+          <p>{this.props.repo.name}</p>
+        </div>
+      </div>
     );
   }
   
