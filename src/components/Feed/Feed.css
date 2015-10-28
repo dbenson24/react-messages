@@ -1,0 +1,33 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.css';
+
+.Feed {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.Feed-container {
+  margin: 0 auto;
+  padding: 20px 8px;
+  max-width: var(--max-content-width);
+  text-align: center;
+  font-size: 1.5em; /* ~24px */
+}
+
+.Feed-link,
+.Feed-link:active,
+.Feed-link:hover,
+.Feed-link:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+.Feed-link:hover {
+  text-decoration: underline;
+}
+
+.Feed-spacer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
