@@ -44,6 +44,7 @@ body {
 .Header-nav {
   margin-top: 6px;
   flex: 3;
+  text-align: right;
 }
 
 .Header-banner {

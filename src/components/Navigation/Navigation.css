@@ -1,11 +1,19 @@
 /* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
+@import '../variables.css';
 .Navigation-link {
-  display: inline-block;
+  display: block;
   padding: 3px 8px;
   text-decoration: none;
   font-size: 1.125em; /* ~18px */
 }
+
+@media (--screen-md) {
+  .Navigation-link {
+    display: inline-block;
+  }
+}
+
 
 .Navigation-link,
 .Navigation-link:active,
