@@ -19,10 +19,6 @@ class Navigation extends Component {
         <a className="Navigation-link" href="/about" onClick={Link.handleClick}>About</a>
         <a className="Navigation-link" href="/resume" onClick={Link.handleClick}>Resume</a>
         <a className="Navigation-link" href="/repos" onClick={Link.handleClick}>Repositories</a>
-        <span className="Navigation-spacer"> | </span>
-        <a className="Navigation-link" href="/login" onClick={Link.handleClick}>Log in</a>
-        <span className="Navigation-spacer">or</span>
-        <a className="Navigation-link Navigation-link--highlight" href="/register" onClick={Link.handleClick}>Sign up</a>
       </div>
     );
   }
