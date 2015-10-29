@@ -1,33 +1,37 @@
 /* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
 @import '../variables.css';
-
 .ContentPage-container {
-  margin: 0 auto;
-  padding: 0 0 40px;
-  max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 15px 40px;
+    max-width: var(--max-content-width);
 }
 
-div.ContentPage > div > h1 {
-  text-align: center;
+.ContentPage > div > h1 {
+    text-align: center;
 }
 
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 h1 {
     font-size: 3em;
 }
+
 h2 {
     font-size: 2.5em;
 }
+
 #bio {
     width: 80%;
     margin: auto;
 }
+
 #profilepic {
     overflow: hidden;
     width: 250px;
@@ -35,6 +39,7 @@ h2 {
     border-radius: 125px;
     margin: auto;
 }
+
 #content {
     margin: auto;
     text-align: center;
@@ -47,6 +52,7 @@ ul {
     list-style: none;
     padding: 0;
 }
+
 .resume li {
     text-align: center;
     border-bottom: solid;
@@ -58,18 +64,23 @@ ul {
     -ms-transition: font-size 0.2s ease, background-color 0.6s ease;
     transition: font-size 0.2s ease, background-color 0.6s ease;
 }
+
 li:last-child {
     border: none;
 }
+
 li:hover {
     background: #E2E2E2;
 }
+
 .complete:hover {
     background: rgba(115, 230, 101, 0.67);
 }
+
 .taking:hover {
     background: rgba(83, 175, 236, 0.67);
 }
+
 hr:after {
     position: absolute;
     width: 12px;
@@ -81,6 +92,7 @@ hr:after {
     background-color: #6699CC;
     border-radius: 6px;
 }
+
 hr {
     display: block;
     height: 1px;
@@ -94,6 +106,7 @@ hr {
     max-width: 80%;
     position: relative;
 }
+
 .linkButton {
     background-color: rgba(87, 197, 237, 0.66);
     color: #000000;
@@ -104,9 +117,11 @@ hr {
     display: block;
     margin: 10px auto;
 }
+
 .linkButton:hover {
     background-color: rgba(7, 138, 185, 0.66);
 }
+
 @media all and (min-width: 1024px) {
     /* For desktops and larger devices: */
     #profilepic {
@@ -126,4 +141,9 @@ hr {
     #skills {
         margin-bottom: 50px;
     }
+}
+
+#bio > p {
+    font-size: 1.5em;
+    line-height: 2em;
 }

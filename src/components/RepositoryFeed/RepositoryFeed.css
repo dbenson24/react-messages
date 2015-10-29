@@ -47,7 +47,8 @@
 }
 
 .Repository-top {
-  height: calc(75% - 10px);
+  height: 75%;
+  box-sizing: border-box;
   width: 100%;
   padding-top: 10px;
 }
