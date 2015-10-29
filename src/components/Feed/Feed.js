@@ -11,7 +11,7 @@ class Feed extends Component {
   
   constructor() {
   super();
-  this.state = {repositories: []};
+  this.state = this._getState();
   this._update = this._update.bind(this);
  }
 
@@ -38,7 +38,13 @@ class Feed extends Component {
   
   _update() {
     console.log("Recieved change event");
-    this.setState({repositories: RepositoryStore.getAll()});
+    this.setState(this._getState());
+  }
+  
+  _getState() {
+    return {
+      repositories: RepositoryStore.getAll()
+    };
   }
 
 }
@@ -49,7 +55,13 @@ class Repository extends Component {
     return (
       <div className="Repository-container">
         <div className="Repository">
-          <p>{this.props.repo.name}</p>
+          <div className="Repository-top">
+            <span className="Repository-description">{this.props.repo.description}</span>
+          </div>
+          <div className="Repository-bottom">
+            <span className="Repository-name">{this.props.repo.name}</span>
+            <a className="Repository-link" href={this.props.repo.html_url}>View</a>
+          </div>
         </div>
       </div>
     );

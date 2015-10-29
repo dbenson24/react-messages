@@ -15,8 +15,8 @@ import fetch from './lib/fetch';
 // For more information visit http://gitolite.com/deploy.html
 const getRemote = (slot) => ({
   name: slot ? slot : 'production',
-  url: `https://example${slot ? '-' + slot : ''}.scm.azurewebsites.net:443/example.git`,
-  website: `http://example${slot ? '-' + slot : ''}.azurewebsites.net`,
+  url: `https://git.heroku.com/derekabenson.git`,
+  website: `http://derekabenson.herokuapp.com`,
 });
 
 /**
@@ -25,7 +25,7 @@ const getRemote = (slot) => ({
  */
 async function deploy() {
   // By default deploy to the staging deployment slot
-  const remote = getRemote(process.argv.includes('--production') ? null : 'staging');
+  const remote = getRemote("");
 
   // Initialize a new Git repository inside the `/build` folder
   // if it doesn't exist yet

@@ -33,15 +33,49 @@
 }
 
 .Repository-container {
-  background-color: #ffffff;
   padding: 15px;
+  height: 300px;
 }
 
 .Repository {
+  background-color: #ffffff;
   border: black;
   border-style: solid;
   border-width: 1px;
   box-shadow: 10px 10px 5px #888888;
+  height: 100%;
+}
+
+.Repository-top {
+  height: 75%;
+  width: 100%;
+}
+
+.Repository-bottom {
+  background-color: #F3F3F3;
+  height: 25%;
+  width: 100%;
+}
+
+.Repository-description {
+  font-size: 1em;
+}
+
+.Repository-name {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.Repository-link {
+    display: inline-block;
+    background-color: #00A8FF;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    font-size: .75em;
+    text-decoration: none;
 }
 
 @media (--screen-xs) {
@@ -58,12 +92,12 @@
 @media (--screen-md) {
   .Repository-container {
     display: inline-block;
-    width: 50%;
+    width: 45%;
   }
 }
 @media (--screen-lg) {
   .Repository-container {
     display: inline-block;
-    width: 33%;
+    width: 30%;
   }
 }
