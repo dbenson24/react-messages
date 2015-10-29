@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import styles from './RepositoryFeed.css';
 import withStyles from '../../decorators/withStyles';
 import RepositoryStore from '../../stores/RepositoryStore';
+import classNames from 'classnames';
+
 
 @withStyles(styles)
 
@@ -59,7 +61,7 @@ class Repository extends Component {
             <span className="Repository-description">{this.props.repo.description}</span>
           </div>
           <div className="Repository-bottom">
-            <span className="Repository-name">{this.props.repo.name}</span>
+            <span className={classNames({"Forked":this.props.repo.fork, "Repository-name":true})}>{this.props.repo.name}</span>
             <a className="Repository-link" href={this.props.repo.html_url}>View</a>
           </div>
         </div>

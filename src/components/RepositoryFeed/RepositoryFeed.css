@@ -34,28 +34,31 @@
 
 .Repository-container {
   padding: 15px;
-  height: 300px;
+  height: 200px;
 }
 
 .Repository {
   background-color: #ffffff;
-  border: black;
+  border: rgba(0, 0, 0, 0.34);
   border-style: solid;
   border-width: 1px;
   box-shadow: 10px 10px 5px #888888;
   height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .Repository-top {
-  height: 75%;
+  height: calc(100% - 75px);
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
+  text-align: left;
 }
 
 .Repository-bottom {
   background-color: #F3F3F3;
-  height: 25%;
+  height: 75px;
   width: 100%;
   display: flex;
   padding: 20px;
@@ -63,7 +66,7 @@
 }
 
 .Repository-description {
-  font-size: 1em;
+  font-size: 0.75em;
 }
 
 .Repository-name {
@@ -117,4 +120,10 @@
     display: inline-block;
     width: 30%;
   }
+}
+
+.Forked:before {
+    position: relative;
+    content: url('/images/fork20.png');
+    top: 2px;
 }
