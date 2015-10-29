@@ -74,8 +74,9 @@
   float: left;
   height: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 100%;
 }
 
 .Repository-link {
