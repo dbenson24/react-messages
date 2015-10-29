@@ -1,13 +1,13 @@
 /*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
 import React, { Component } from 'react';
-import styles from './Feed.css';
+import styles from './RepositoryFeed.css';
 import withStyles from '../../decorators/withStyles';
 import RepositoryStore from '../../stores/RepositoryStore';
 
 @withStyles(styles)
 
-class Feed extends Component {
+class RepositoryFeed extends Component {
   
   constructor() {
   super();
@@ -70,4 +70,4 @@ class Repository extends Component {
 }
 
 
-export default Feed;
+export default RepositoryFeed;

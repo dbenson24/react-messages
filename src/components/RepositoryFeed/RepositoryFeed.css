@@ -71,11 +71,12 @@
     display: inline-block;
     background-color: #00A8FF;
     color: white;
-    border-radius: 20px;
+    border-radius: 50%;
     padding: 10px;
     margin: 10px;
     font-size: .75em;
     text-decoration: none;
+    box-shadow: 2px 2px 5px#056A9E;
 }
 
 @media (--screen-xs) {

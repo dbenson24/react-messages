@@ -10,7 +10,7 @@ import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import NotFoundPage from './components/NotFoundPage';
 import ErrorPage from './components/ErrorPage';
-import Feed from './components/Feed';
+import RepositoryFeed from './components/RepositoryFeed';
 
 
 const router = new Router(on => {
@@ -25,8 +25,8 @@ const router = new Router(on => {
 
   on('/register', async () => <RegisterPage />);
   
-  on('/feed', async () => {
-    return <Feed />;
+  on('/repos', async () => {
+    return <RepositoryFeed />;
   }
   );
 
