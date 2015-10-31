@@ -18,10 +18,18 @@ class RegisterPage extends Component {
       <div className="RegisterPage">
         <div className="RegisterPage-container">
           <h1>{title}</h1>
-          <p>...</p>
+          <p>{this.getText()}</p>
         </div>
       </div>
     );
+  }
+  
+  getText() {
+    if(this.props.user) {
+      return "You are logged in as " + this.props.user.username + "!";
+    } else {
+      return "Please log in";
+    }
   }
 
 }

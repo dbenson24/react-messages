@@ -18,7 +18,7 @@ class LoginPage extends Component {
       <div className="LoginPage">
         <div className="LoginPage-container">
           <h1>{title}</h1>
-          <p>...</p>
+          <a href="/auth/github">Sign in with Github</a>
         </div>
       </div>
     );

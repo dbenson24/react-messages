@@ -17,17 +17,12 @@ class Header extends Component {
             <img className="Header-brandImg" src={require('./logo-small.png')} width="38" height="38" alt="React" />
             <span className="Header-brandTxt">Derek Benson</span>
           </a>
-          <span>{this.getText()}</span>
           <Navigation className="Header-nav" />
         </div>
       </div>
     );
   }
   
-  getText() {
-    console.log("header props", this.props);
-    if(this.props.user) {return this.props.user.username;} else {return "Logged out";};
-  }
 }
 
 export default Header;

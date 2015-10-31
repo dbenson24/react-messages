@@ -119,6 +119,7 @@ server.get(secrets.github.callbackURL,
     res.redirect('/');
   });
 
+
 //
 // Register API middleware
 // -----------------------------------------------------------------------------
@@ -131,6 +132,15 @@ server.get("/test", (req, res) => {
   let user = jwt.verify(req.cookies.token, "test");  
   res.send(user);
 });
+
+server.get("/logout", (req, res) => {
+  res.clearCookie('token');
+  res.clearCookie('user');
+  req.cookies.token = null;
+  req.cookies.user = null;
+  res.redirect('/');
+});
+
 
 //
 // Register server-side rendering middleware

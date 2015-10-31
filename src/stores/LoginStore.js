@@ -16,7 +16,7 @@ class LoginStore extends EventEmitter {
         super();
         this.user = {};
         this.authenticated = false;
-//        this.isAuthenticated = this.isAuthenticated.bind(this);
+        //        this.isAuthenticated = this.isAuthenticated.bind(this);
     }
 
     /**
@@ -34,10 +34,12 @@ class LoginStore extends EventEmitter {
         }
         return false;
     }
-    
+
     setUser(user, authenticated) {
+        console.log("setting user", user);
         this.user = user;
         this.authenticated = authenticated;
+        this.emitChange();
     }
 
     emitChange() {
@@ -80,8 +82,8 @@ async() => {
     console.log("Recieved User");
     if (response.err) {
         store.setUser({}, false);
-    } else {
+    }
+    else {
         store.setUser(response.user, true);
     }
-    store.emitChange();
 }();

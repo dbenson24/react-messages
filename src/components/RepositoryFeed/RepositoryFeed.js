@@ -1,6 +1,6 @@
 /*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
-import React, { Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import styles from './RepositoryFeed.css';
 import withStyles from '../../decorators/withStyles';
 import RepositoryStore from '../../stores/RepositoryStore';
@@ -16,8 +16,14 @@ class RepositoryFeed extends Component {
   this.state = this._getState();
   this._update = this._update.bind(this);
  }
+ 
+ static contextTypes = {
+    onSetTitle: PropTypes.func.isRequired,
+  };
 
   render() {
+    const title = 'Github Repositories';
+    this.context.onSetTitle(title);
     return (
       <div className="Feed">
         <div className="Feed-container">

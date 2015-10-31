@@ -20,13 +20,13 @@ const router = new Router(on => {
     return component && <App context={state.context} user={state.user}>{component}</App>;
   });
 
-  on('/contact', async () => <ContactPage />);
+  on('/contact', async (state) => <ContactPage />);
 
-  on('/login', async () => <LoginPage />);
+  on('/login', async (state) => <LoginPage user={state.user}/>);
 
-  on('/register', async () => <RegisterPage />);
+  on('/register', async (state) => <RegisterPage user={state.user}/>);
   
-  on('/repos', async () => {
+  on('/repos', async (state) => {
     return <RepositoryFeed />;
   }
   );

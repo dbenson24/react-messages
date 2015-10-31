@@ -12,25 +12,31 @@ import Footer from '../Footer';
 import LoginStore from '../../stores/LoginStore';
 
 
+/*
+The Component acts as the source of truth for the User information, Children can be
+passed the user prop as needed
+*/
+
 @
 withContext@ withStyles(styles)
 class App extends Component {
   constructor(props) {
     super(props);
     
-    console.log("app props in constructor", props);
+   // console.log("app props in constructor", props);
     if(props.user) {
       this.state = {user: props.user};
+      LoginStore.setUser(props.user, true);
     } else {
       this.state = {user: LoginStore.getProfile()};
     }
     this._update = this._update.bind(this);
-    console.log("Current app state", this.state.user);
+   // console.log("Current app state", this.state.user);
   }
 
   _update() {
     this.setState({user: LoginStore.getProfile()});
-    console.log("Current app state", this.state.user);
+  //  console.log("Current app state", this.state.user);
   }
 
   componentDidMount() {
@@ -49,12 +55,11 @@ class App extends Component {
   };
 
   render() {
-    console.log("app props", this.props);
     return !this.props.error ? (
       <div>
-        <Header user={this.props.user}/>
+        <Header user={this.state.user}/>
         {this.props.children}
-        <Footer />
+        <Footer user={this.state.user}/>
       </div>
     ) : this.props.children;
   }
