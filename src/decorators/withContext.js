@@ -13,6 +13,7 @@ function withContext(ComposedComponent) {
         onSetMeta: PropTypes.func,
         onPageNotFound: PropTypes.func,
       }),
+      user: PropTypes.object,
     };
 
     static childContextTypes = {
@@ -24,6 +25,7 @@ function withContext(ComposedComponent) {
 
     getChildContext() {
       const context = this.props.context;
+      console.log("with context props", this.props);
       return {
         onInsertCss: context.onInsertCss || emptyFunction,
         onSetTitle: context.onSetTitle || emptyFunction,

@@ -25,6 +25,7 @@ class Header extends Component {
   }
   
   getText() {
+    console.log("header props", this.props);
     if(this.props.user) {return this.props.user.username;} else {return "Logged out";};
   }
 }

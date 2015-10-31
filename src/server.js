@@ -146,16 +146,20 @@ server.get('*', async(req, res, next) => {
       body: ''
     };
     const css = [];
-    const context = {
+    let context = {
       onInsertCss: value => css.push(value),
       onSetTitle: value => data.title = value,
       onSetMeta: (key, value) => data[key] = value,
       onPageNotFound: () => statusCode = 404,
     };
-
+    let user = false;
+    if(req.cookies.token) {
+      user = jwt.verify(req.cookies.token, "test");  
+    }
     await Router.dispatch({
       path: req.path,
-      context
+      context,
+      user
     }, (state, component) => {
       data.body = ReactDOM.renderToString(component);
       data.css = css.join('');

@@ -1,0 +1,2077 @@
+
+> @ start /home/ubuntu/workspace
+> babel-node tools/run start
+
+[16:04:30] Starting 'start'...
+[16:04:30] Starting 'build'...
+[16:04:30] Starting 'clean'...
+[16:04:30] Finished 'clean' after 101 ms
+[16:04:30] Starting 'copy'...
+build/package.json
+[16:04:30] Finished 'copy' after 190 ms
+[16:04:30] Starting 'bundle'...
+Time: [1m15515[22mms
+        [1mAsset[22m    [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+    [1m[32mserver.js[39m[22m  177 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32mserver.js.map[39m[22m  140 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+Time: [1m16757[22mms
+ [1mAsset[22m     [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+[1m[32mapp.js[39m[22m  3.88 MB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[16:04:47] Finished 'bundle' after 16928 ms
+[16:04:47] Finished 'build' after 17499 ms
+[16:04:47] Starting 'serve'...
+[16:04:49] Created LoginStore
+[16:04:49] Updating LoginStore
+[16:04:49] Created RepositoryStore
+[16:04:49] Updating store
+[16:04:50] The server is running at http://localhost:8080/
+[16:04:50] Finished 'serve' after 2330 ms
+[16:04:50] Finished 'start' after 20049 ms
+[BS] [info] Proxying: http://localhost:5000
+[BS] Access URLs:
+ -------------------------------------
+       Local: http://localhost:3000
+    External: http://172.17.51.84:3000
+ -------------------------------------
+          UI: http://localhost:3001
+ UI External: http://172.17.51.84:3001
+ -------------------------------------
+[BS] Watching files...
+webpack built 3c5eb460941055e0df58 in 8412ms
+Time: [1m8412[22mms
+ [1mAsset[22m     [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+[1m[32mapp.js[39m[22m  3.88 MB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+webpack: bundle is now VALID.
+[16:04:59] token undefined /__webpack_hmr ::ffff:10.240.0.28
+[16:04:59] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:04:59] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:04:59] Current app state false
+[16:04:59] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:05:00] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 / ::ffff:10.240.0.49
+[16:05:00] serverside state { path: '/',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/' } }
+[16:05:00] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+[16:05:00] Current app state false
+[16:05:00] app props { user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+[16:05:10] Hit the user server request with token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48
+[16:05:10] Hit the server request
+[16:05:11] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.48
+[16:05:11] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:05:11] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:05:11] Current app state false
+[16:05:11] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:05:20] token undefined /__webpack_hmr ::ffff:10.240.0.49
+[16:05:20] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:05:20] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:05:20] Current app state false
+[16:05:20] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:05:31] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.48
+[16:05:31] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:05:31] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:05:31] Current app state false
+[16:05:31] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:05:41] token undefined /__webpack_hmr ::ffff:10.240.0.61
+[16:05:41] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:05:41] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:05:41] Current app state false
+[16:05:41] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:02] token undefined /__webpack_hmr ::ffff:10.240.0.48
+[16:06:02] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:06:02] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:02] Current app state false
+[16:06:02] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:13] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.64
+[16:06:13] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:06:13] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:13] Current app state false
+[16:06:13] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:23] token undefined /__webpack_hmr ::ffff:10.240.0.40
+[16:06:23] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:06:23] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:23] Current app state false
+[16:06:23] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:34] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.42
+[16:06:34] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:06:34] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:34] Current app state false
+[16:06:34] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:44] token undefined /__webpack_hmr ::ffff:10.240.0.41
+[16:06:44] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:06:44] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:44] Current app state false
+[16:06:44] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:06:55] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.28
+[16:06:55] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+Current app state false
+[16:06:55] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:05] token undefined /__webpack_hmr ::ffff:10.240.0.41
+[16:07:05] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:07:05] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:05] Current app state false
+[16:07:05] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:16] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.48
+[16:07:16] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:07:16] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:16] Current app state false
+[16:07:16] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:26] token undefined /__webpack_hmr ::ffff:10.240.0.42
+[16:07:26] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:07:26] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:26] Current app state false
+[16:07:26] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:37] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.48
+[16:07:37] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:07:37] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:37] Current app state false
+[16:07:37] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:47] token undefined /__webpack_hmr ::ffff:10.240.0.42
+[16:07:47] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:07:47] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:47] Current app state false
+[16:07:47] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:58] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.61
+[16:07:58] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:07:58] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:07:58] Current app state false
+[16:07:58] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:08:08] token undefined /__webpack_hmr ::ffff:10.240.0.68
+[16:08:08] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:08:08] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:08:08] Current app state false
+[16:08:08] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+webpack: bundle is now INVALID.
+webpack building...
+webpack built 82edee0884f83fbff4bf in 2547ms
+Time: [1m2547[22mms
+                               [1mAsset[22m      [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+                              [1m[32mapp.js[39m[22m   3.88 MB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m0.3c5eb460941055e0df58.hot-update.js[39m[22m    9.1 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m3c5eb460941055e0df58.hot-update.json[39m[22m  36 bytes        [1m[22m  [1m[32m[emitted][39m[22m  
+webpack: bundle is now VALID.
+Time: [1m2928[22mms
+        [1mAsset[22m    [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+    [1m[32mserver.js[39m[22m  177 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32mserver.js.map[39m[22m  140 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+Time: [1m2875[22mms
+                               [1mAsset[22m      [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+                              [1m[32mapp.js[39m[22m   3.88 MB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m0.3c5eb460941055e0df58.hot-update.js[39m[22m    9.1 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m3c5eb460941055e0df58.hot-update.json[39m[22m  36 bytes        [1m[22m  [1m[32m[emitted][39m[22m  
+[16:08:17] Created LoginStore
+[16:08:17] Updating LoginStore
+[16:08:17] Created RepositoryStore
+[16:08:17] Updating store
+[16:08:17] The server is running at http://localhost:8080/
+[16:08:19] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.42
+[16:08:19] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:08:19] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:08:19] app props in constructor undefined
+[16:08:19] Current app state false
+[16:08:19] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:08:29] token undefined /__webpack_hmr ::ffff:10.240.0.42
+[16:08:29] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:08:29] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:08:29] app props in constructor undefined
+[16:08:29] Current app state false
+[16:08:29] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:08:40] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.38
+[16:08:40] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:08:40] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:08:40] app props in constructor undefined
+Current app state false
+app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:08:50] token undefined /__webpack_hmr ::ffff:10.240.0.61
+[16:08:50] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:08:50] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:08:50] app props in constructor undefined
+[16:08:50] Current app state false
+[16:08:50] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:01] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.38
+[16:09:01] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:09:01] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:01] app props in constructor undefined
+[16:09:01] Current app state false
+[16:09:01] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:11] token undefined /__webpack_hmr ::ffff:10.240.0.41
+[16:09:11] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:09:11] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:11] app props in constructor undefined
+[16:09:11] Current app state false
+[16:09:11] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:22] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.64
+[16:09:22] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:09:22] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:22] app props in constructor undefined
+[16:09:22] Current app state false
+[16:09:22] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:32] token undefined /__webpack_hmr ::ffff:10.240.0.40
+[16:09:32] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:09:32] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:32] app props in constructor undefined
+[16:09:32] Current app state false
+[16:09:32] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:43] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.41
+[16:09:43] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:09:43] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:43] app props in constructor undefined
+[16:09:43] Current app state false
+[16:09:43] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+webpack: bundle is now INVALID.
+webpack building...
+[16:09:49] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 / ::ffff:10.240.0.48
+serverside state { path: '/',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/' } }
+with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+app props in constructor undefined
+Current app state false
+app props { user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+webpack built 292848da29189289a4e5 in 5259ms
+Time: [1m5259[22mms
+                               [1mAsset[22m      [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+                              [1m[32mapp.js[39m[22m   3.88 MB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m0.82edee0884f83fbff4bf.hot-update.js[39m[22m    9.1 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m82edee0884f83fbff4bf.hot-update.json[39m[22m  36 bytes        [1m[22m  [1m[32m[emitted][39m[22m  
+webpack: bundle is now VALID.
+Time: [1m5767[22mms
+        [1mAsset[22m    [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+    [1m[32mserver.js[39m[22m  177 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32mserver.js.map[39m[22m  140 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+Time: [1m5471[22mms
+                               [1mAsset[22m      [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+                              [1m[32mapp.js[39m[22m   3.88 MB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m0.82edee0884f83fbff4bf.hot-update.js[39m[22m    9.1 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m82edee0884f83fbff4bf.hot-update.json[39m[22m  36 bytes        [1m[22m  [1m[32m[emitted][39m[22m  
+[16:09:52] Created LoginStore
+[16:09:52] Updating LoginStore
+[16:09:52] Created RepositoryStore
+[16:09:52] Updating store
+[16:09:52] The server is running at http://localhost:8080/
+[16:09:53] token undefined /__webpack_hmr ::ffff:10.240.0.42
+[16:09:53] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:09:53] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:09:53] app props in constructor undefined
+[16:09:53] Current app state false
+[16:09:53] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:10:10] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 / ::ffff:10.240.0.64
+[16:10:10] serverside state { path: '/',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/' } }
+[16:10:10] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+[16:10:10] app props in constructor undefined
+[16:10:10] Current app state false
+[16:10:10] app props { user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+[16:10:14] token undefined /__webpack_hmr ::ffff:10.240.0.42
+[16:10:14] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:10:14] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:10:14] app props in constructor undefined
+[16:10:14] Current app state false
+[16:10:14] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:10:16] Hit the user server request with token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48
+[16:10:16] Hit the server request
+[16:10:16] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.28
+[16:10:16] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:10:16] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:10:16] app props in constructor undefined
+[16:10:16] Current app state false
+[16:10:16] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:10:35] token undefined /__webpack_hmr ::ffff:10.240.0.68
+[16:10:35] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:10:35] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:10:35] app props in constructor undefined
+[16:10:35] Current app state false
+[16:10:35] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+webpack: bundle is now INVALID.
+webpack building...
+[16:10:38] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.68
+serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+app props in constructor undefined
+Current app state false
+app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+webpack built 292848da29189289a4e5 in 1854ms
+Time: [1m1854[22mms
+webpack: bundle is now VALID.
+Time: [1m2079[22mms
+Time: [1m2157[22mms
+        [1mAsset[22m    [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+    [1m[32mserver.js[39m[22m  177 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32mserver.js.map[39m[22m  140 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[16:10:40] Created LoginStore
+[16:10:40] Updating LoginStore
+[16:10:40] Created RepositoryStore
+[16:10:40] Updating store
+[16:10:40] The server is running at http://localhost:8080/
+[16:10:53] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 / ::ffff:10.240.0.68
+[16:10:53] serverside state { path: '/',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/' } }
+[16:10:53] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+[16:10:53] app props in constructor undefined
+[16:10:53] Current app state false
+[16:10:53] app props { user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+[16:10:54] Hit the user server request with token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48
+[16:10:55] Hit the server request
+[16:10:55] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.38
+[16:10:55] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:10:55] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:10:55] app props in constructor undefined
+[16:10:55] Current app state false
+[16:10:55] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:10:56] token undefined /__webpack_hmr ::ffff:10.240.0.40
+[16:10:56] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:10:56] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:10:56] app props in constructor undefined
+[16:10:56] Current app state false
+[16:10:56] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:16] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.49
+[16:11:16] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:11:16] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:16] app props in constructor undefined
+[16:11:16] Current app state false
+[16:11:16] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:17] token undefined /__webpack_hmr ::ffff:10.240.0.28
+[16:11:17] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:11:17] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:17] app props in constructor undefined
+[16:11:17] Current app state false
+[16:11:17] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:37] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.38
+[16:11:37] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:11:37] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:37] app props in constructor undefined
+[16:11:37] Current app state false
+[16:11:37] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:38] token undefined /__webpack_hmr ::ffff:10.240.0.40
+[16:11:38] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:11:38] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:38] app props in constructor undefined
+[16:11:38] Current app state false
+[16:11:38] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+webpack: bundle is now INVALID.
+webpack building...
+webpack built 0fa5619f7997e7ecf622 in 1956ms
+Time: [1m1956[22mms
+                               [1mAsset[22m      [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+                              [1m[32mapp.js[39m[22m   3.88 MB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m0.292848da29189289a4e5.hot-update.js[39m[22m   7.93 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m292848da29189289a4e5.hot-update.json[39m[22m  36 bytes        [1m[22m  [1m[32m[emitted][39m[22m  
+webpack: bundle is now VALID.
+Time: [1m2349[22mms
+        [1mAsset[22m    [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+    [1m[32mserver.js[39m[22m  177 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32mserver.js.map[39m[22m  140 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+Time: [1m2361[22mms
+                               [1mAsset[22m      [1mSize[22m  [1mChunks[22m  [1m[22m           [1mChunk Names[22m
+                              [1m[32mapp.js[39m[22m   3.88 MB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m0.292848da29189289a4e5.hot-update.js[39m[22m   7.93 kB       [1m0[22m  [1m[32m[emitted][39m[22m  main
+[1m[32m292848da29189289a4e5.hot-update.json[39m[22m  36 bytes        [1m[22m  [1m[32m[emitted][39m[22m  
+[16:11:49] Created LoginStore
+[16:11:49] Updating LoginStore
+[16:11:49] Created RepositoryStore
+[16:11:49] Updating store
+[16:11:50] The server is running at http://localhost:8080/
+[16:11:50] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 / ::ffff:10.240.0.61
+[16:11:50] serverside state { path: '/',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/' } }
+[16:11:50] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+[16:11:50] app props in constructor undefined
+Current app state false
+app props { user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: 
+      { path: '/',
+        content: '<div id="index"><h1>Welcome!</h1><h3>This website is written with React.js and Node.js.</h3><p>It is an isomorphic React application that minimizes traffic between server\nand client. Currently I am just using it as a test bed for React.\n</p><p>Feel free to look around!</p></div>',
+        title: 'Derek Benson',
+        component: 'ContentPage' },
+     _owner: null,
+     _store: {} } }
+[16:11:50] header props { user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 } }
+[16:11:57] Hit the user server request with token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48
+[16:11:57] Hit the server request
+[16:11:57] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.38
+[16:11:57] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:11:57] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:57] app props in constructor undefined
+[16:11:57] Current app state false
+[16:11:57] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:59] token undefined /__webpack_hmr ::ffff:10.240.0.68
+[16:11:59] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:11:59] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:11:59] app props in constructor undefined
+[16:11:59] Current app state false
+[16:11:59] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:17] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.40
+[16:12:17] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:12:17] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:17] app props in constructor undefined
+[16:12:17] Current app state false
+[16:12:17] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:20] token undefined /__webpack_hmr ::ffff:10.240.0.42
+[16:12:20] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:12:20] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:20] app props in constructor undefined
+[16:12:20] Current app state false
+[16:12:20] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:38] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.41
+[16:12:38] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:12:38] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:38] app props in constructor undefined
+[16:12:38] Current app state false
+app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:41] token undefined /__webpack_hmr ::ffff:10.240.0.41
+[16:12:41] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:12:41] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:41] app props in constructor undefined
+[16:12:41] Current app state false
+[16:12:41] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:59] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.68
+[16:12:59] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:12:59] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:12:59] app props in constructor undefined
+[16:12:59] Current app state false
+[16:12:59] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:13:02] token undefined /__webpack_hmr ::ffff:10.240.0.64
+[16:13:02] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:13:02] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:13:02] app props in constructor undefined
+[16:13:02] Current app state false
+[16:13:02] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:13:20] token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImRiZW5zb24yNCIsImRpc3BsYXlOYW1lIjoiRGVyZWsgQmVuc29uIiwiaWF0IjoxNDQ2Mjk5ODkzfQ.S2soSlU5_IuqciwtMUpivZOKRvnObdL44pZB1KvlU48 /__webpack_hmr ::ffff:10.240.0.41
+[16:13:20] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: 
+   { username: 'dbenson24',
+     displayName: 'Derek Benson',
+     iat: 1446299893 },
+  params: { '0': '/__webpack_hmr' } }
+[16:13:20] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:13:20] app props in constructor undefined
+[16:13:20] Current app state false
+[16:13:20] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:13:23] token undefined /__webpack_hmr ::ffff:10.240.0.41
+[16:13:23] serverside state { path: '/__webpack_hmr',
+  context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  user: false,
+  params: { '0': '/__webpack_hmr' } }
+[16:13:23] with context props { context: 
+   { onInsertCss: [Function: onInsertCss],
+     onSetTitle: [Function: onSetTitle],
+     onSetMeta: [Function: onSetMeta],
+     onPageNotFound: [Function: onPageNotFound] },
+  error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }
+[16:13:23] app props in constructor undefined
+[16:13:23] Current app state false
+[16:13:23] app props { error: [Error: Cannot found a route matching '/__webpack_hmr'.],
+  children: 
+   { '$$typeof': Symbol(react.element),
+     type: { [Function: WithStyles] contextTypes: [Object] },
+     key: null,
+     ref: null,
+     props: {},
+     _owner: null,
+     _store: {} } }

@@ -17,7 +17,13 @@ withContext@ withStyles(styles)
 class App extends Component {
   constructor() {
     super();
-    this.state = {user: LoginStore.getProfile()};
+    
+    console.log("app props in constructor", this.props);
+    /*if(this.props.user) {
+      this.state = {user: this.props.user};
+    } else {*/
+      this.state = {user: LoginStore.getProfile()};
+    //}
     this._update = this._update.bind(this);
     console.log("Current app state", this.state.user);
   }
@@ -38,13 +44,15 @@ class App extends Component {
 
   static propTypes = {
     children: PropTypes.element.isRequired,
+    user: PropTypes.object,
     error: PropTypes.object,
   };
 
   render() {
+    console.log("app props", this.props);
     return !this.props.error ? (
       <div>
-        <Header user={this.state.user}/>
+        <Header user={this.props.user}/>
         {this.props.children}
         <Footer />
       </div>

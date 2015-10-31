@@ -16,7 +16,8 @@ import RepositoryFeed from './components/RepositoryFeed';
 const router = new Router(on => {
   on('*', async (state, next) => {
     const component = await next();
-    return component && <App context={state.context}>{component}</App>;
+    console.log("serverside state", state);
+    return component && <App context={state.context} user={state.user}>{component}</App>;
   });
 
   on('/contact', async () => <ContactPage />);
