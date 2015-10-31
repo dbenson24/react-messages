@@ -20,7 +20,7 @@ class RepositoryStore extends EventEmitter {
 
     /**
      * Get the entire collection of Repositories.
-     * @return {object}
+     * @return [repo]
      */
 
     setAll(repos) {
@@ -51,7 +51,7 @@ class RepositoryStore extends EventEmitter {
 };
 
 let store = new RepositoryStore();
-console.log("Created store");
+console.log("Created RepositoryStore");
 
 export default store;
 

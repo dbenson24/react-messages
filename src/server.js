@@ -72,7 +72,8 @@ passport.use(new GoogleStrategy({
 passport.use(new GitHubStrategy({
     clientID: secrets.github.clientID,
     clientSecret: secrets.github.clientSecret,
-    callbackURL: secrets.github.callbackURL
+    callbackURL: secrets.github.callbackURL,
+    scope: ["user", "user:email"]
   },
   function(accessToken, refreshToken, profile, done) {
       // To keep the example simple, the user's GitHub profile is returned to
@@ -109,14 +110,12 @@ server.get(secrets.google.callbackURL,
 server.get(secrets.github.callbackURL, 
   passport.authenticate('github', { failureRedirect: '/login' }),
   function(req, res) {
-  console.log("users", req.user);
     let user = {
       username: req.user.username,
       displayName: req.user.displayName
     };
     let token = jwt.sign(user, "test");
-    res.cookie('token', token);
-  console.log(req.isAuthenticated());
+    res.cookie('token', token, { maxAge: 9000000000, httpOnly: true });
     res.send(req.user);
   });
 
@@ -125,12 +124,10 @@ server.get(secrets.github.callbackURL,
 // -----------------------------------------------------------------------------
 server.use('/api/content', require('./api/content'));
 server.use('/api/repos', require('./api/repos'));
-
+server.use('/api/user', require('./api/user'));
 
 server.get("/test", (req, res) => {
   console.log("test user", req.user);
-  console.log(req.cookies);
-  let token = req.cookies.token;
   let user = jwt.verify(req.cookies.token, "test");  
   res.send(user);
 });
@@ -139,9 +136,7 @@ server.get("/test", (req, res) => {
 // Register server-side rendering middleware
 // -----------------------------------------------------------------------------
 server.get('*', async(req, res, next) => {
-  console.log(req.user);
-  console.log(req.isAuthenticated());
-  console.log(req.session);
+  console.log("token", req.cookies.token, req.path, req.ip);
   try {
     let statusCode = 200;
     const data = {
