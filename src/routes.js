@@ -16,7 +16,6 @@ import RepositoryFeed from './components/RepositoryFeed';
 const router = new Router(on => {
   on('*', async (state, next) => {
     const component = await next();
-    console.log("route state", state);
     return component && <App context={state.context} user={state.user}>{component}</App>;
   });
 

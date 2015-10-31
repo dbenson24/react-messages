@@ -114,7 +114,7 @@ server.get(secrets.github.callbackURL,
       username: req.user.username,
       displayName: req.user.displayName
     };
-    let token = jwt.sign(user, "test");
+    let token = jwt.sign(user, secrets.jwt);
     res.cookie('token', token, { maxAge: 9000000000, httpOnly: true });
     res.redirect('/');
   });
@@ -129,7 +129,7 @@ server.use('/api/user', require('./api/user'));
 
 server.get("/test", (req, res) => {
   console.log("test user", req.user);
-  let user = jwt.verify(req.cookies.token, "test");  
+  let user = jwt.verify(req.cookies.token, secrets.jwt);  
   res.send(user);
 });
 
@@ -146,7 +146,6 @@ server.get("/logout", (req, res) => {
 // Register server-side rendering middleware
 // -----------------------------------------------------------------------------
 server.get('*', async(req, res, next) => {
-  console.log("token", req.cookies.token, req.path, req.ip);
   try {
     let statusCode = 200;
     const data = {
@@ -164,7 +163,7 @@ server.get('*', async(req, res, next) => {
     };
     let user = false;
     if(req.cookies.token) {
-      user = jwt.verify(req.cookies.token, "test");  
+      user = jwt.verify(req.cookies.token, secrets.jwt);  
     }
     res.cookie("user", user, { httpOnly: false, secure:false });
     await Router.dispatch({
