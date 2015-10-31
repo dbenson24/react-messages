@@ -15,15 +15,15 @@ import LoginStore from '../../stores/LoginStore';
 @
 withContext@ withStyles(styles)
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     
-    console.log("app props in constructor", this.props);
-    /*if(this.props.user) {
-      this.state = {user: this.props.user};
-    } else {*/
+    console.log("app props in constructor", props);
+    if(props.user) {
+      this.state = {user: props.user};
+    } else {
       this.state = {user: LoginStore.getProfile()};
-    //}
+    }
     this._update = this._update.bind(this);
     console.log("Current app state", this.state.user);
   }

@@ -28,7 +28,7 @@ server.set('port', port);
 server.use(express.static(path.join(__dirname, 'public')));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
-server.use(cookieParser('keyboard cat'));
+server.use(cookieParser());
 /*
 server.use(session({
   secret: 'keyboard cat',
@@ -116,7 +116,7 @@ server.get(secrets.github.callbackURL,
     };
     let token = jwt.sign(user, "test");
     res.cookie('token', token, { maxAge: 9000000000, httpOnly: true });
-    res.send(req.user);
+    res.redirect('/');
   });
 
 //
@@ -156,6 +156,7 @@ server.get('*', async(req, res, next) => {
     if(req.cookies.token) {
       user = jwt.verify(req.cookies.token, "test");  
     }
+    res.cookie("user", user, { httpOnly: false, secure:false });
     await Router.dispatch({
       path: req.path,
       context,

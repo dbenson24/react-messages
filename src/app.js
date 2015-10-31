@@ -28,6 +28,7 @@ const context = {
 };
 
 function render(state) {
+  console.log("client state", state);
   Router.dispatch(state, (newState, component) => {
     ReactDOM.render(component, appContainer, () => {
       // Restore the scroll position if it was saved into the state
@@ -47,13 +48,38 @@ function render(state) {
   });
 }
 
+function getUser() {
+  function getCookie(cname) {
+    var ca = document.cookie.split('; ');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i].split('=');
+        let key = c[0];
+        let value = c[1];
+        if (key == cname) {
+          return value;
+        }
+    }
+    return "";
+  }
+  let string = decodeURIComponent(getCookie("user"));
+  if (string === "false") {
+    return false;
+  }
+  while(string[0] !== "{" && string.length > 0){
+    string = string.substring(1);
+  }
+  return JSON.parse(string);
+}
+
 function run() {
   let currentLocation = null;
   let currentState = null;
 
   // Make taps on links and buttons work fast on mobiles
   FastClick.attach(document.body);
-
+  
+  let user = getUser();
+  console.log("user", user);
   // Re-render the app when window.location changes
   const unlisten = Location.listen(location => {
     currentLocation = location;
@@ -62,6 +88,7 @@ function run() {
       query: location.query,
       state: location.state,
       context,
+      user,
     });
     render(currentState);
   });
