@@ -170,6 +170,7 @@ server.get('*', async(req, res, next) => {
           body: ''
         };
         const css = [];
+        console.log("request.user", req.user, req.path);
         let context = {
           onInsertCss: value => css.push(value),
           onSetTitle: value => data.title = value,
@@ -181,6 +182,7 @@ server.get('*', async(req, res, next) => {
           context,
           user: req.user
         }, (state, component) => {
+          console.log("component", component);
           data.body = ReactDOM.renderToString(component);
           data.css = css.join('');
         });

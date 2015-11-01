@@ -20,31 +20,31 @@ passed the user prop as needed
 @
 withContext@ withStyles(styles)
 class App extends Component {
-  constructor(props) {
-    super(props);
+//  constructor(props) {
+//    super(props);
     
    // console.log("app props in constructor", props);
-    if(props.user) {
-      this.state = {user: props.user};
-      LoginStore.setUser(props.user, true);
-    } else {
-      this.state = {user: LoginStore.getProfile()};
-    }
-    this._update = this._update.bind(this);
+//    if(props.user) {
+//      this.state = {user: props.user};
+//      LoginStore.setUser(props.user, true);
+//    } else {
+//      this.state = {user: LoginStore.getProfile()};
+//    }
+//    this._update = this._update.bind(this);
    // console.log("Current app state", this.state.user);
-  }
+//  }
 
   _update() {
-    this.setState({user: LoginStore.getProfile()});
+//    this.setState({user: LoginStore.getProfile()});
   //  console.log("Current app state", this.state.user);
   }
 
   componentDidMount() {
-    LoginStore.addChangeListener(this._update);
+//    LoginStore.addChangeListener(this._update);
   }
 
   componentWillUnmount() {
-    LoginStore.removeChangeListener(this._update);
+//    LoginStore.removeChangeListener(this._update);
   }
 
 
@@ -57,9 +57,9 @@ class App extends Component {
   render() {
     return !this.props.error ? (
       <div>
-        <Header user={this.state.user}/>
+        <Header user={this.props.user}/>
         {this.props.children}
-        <Footer user={this.state.user}/>
+        <Footer user={this.props.user}/>
       </div>
     ) : this.props.children;
   }

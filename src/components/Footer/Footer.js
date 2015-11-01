@@ -32,7 +32,7 @@ class Footer extends Component {
       userLinkOnClick = "";
     }
     
-    
+    console.log(`rendering footer with user: `, this.props.user);
     return (
       <div className="Footer">
         <div className="Footer-container">

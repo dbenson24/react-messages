@@ -65,6 +65,11 @@ function getUser() {
   if (string === "false") {
     return false;
   }
+  
+  if (string.indexOf("{") == -1) {
+    return false;
+  }
+  
   while(string[0] !== "{" && string.length > 0){
     string = string.substring(1);
   }

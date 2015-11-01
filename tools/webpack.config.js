@@ -13,7 +13,9 @@ import merge from 'lodash.merge';
 
 const DEBUG = !process.argv.includes('--release');
 const VERBOSE = process.argv.includes('--verbose');
-const WATCH = global.WATCH === undefined ? false : global.WATCH;
+// Disable webpack hot reload
+//const WATCH = global.WATCH === undefined ? false : global.WATCH;
+const WATCH = false;
 const AUTOPREFIXER_BROWSERS = [
   'Android 2.3',
   'Android >= 4',
@@ -103,8 +105,9 @@ const config = {
 // -----------------------------------------------------------------------------
 
 const appConfig = merge({}, config, {
+  //(WATCH ? ['webpack-hot-middleware/client'] : [])
   entry: [
-    ...(WATCH ? ['webpack-hot-middleware/client'] : []),
+    ...([]),
     './src/app.js',
   ],
   output: {
